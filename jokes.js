@@ -34,7 +34,7 @@ document.getElementById("pun").addEventListener("click", () => {
     .then (response =>response.json())
     .then (data => {
         console.log(data);
-        title.textContent = "A Random Pun Joke";
+        title.textContent = "A Random Pun";
         document.getElementById('joke').textContent = data.joke || data.setup +"..."+ data.delivery;
     });
 })
